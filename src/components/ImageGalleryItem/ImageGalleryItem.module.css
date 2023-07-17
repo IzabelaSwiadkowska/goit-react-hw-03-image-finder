@@ -1,0 +1,28 @@
+.imageGallery__item {
+  min-width: 350px;
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 10px;
+  flex-direction: column;
+  flex-basis: calc(25% - 20px);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  overflow: hidden;
+}
+
+.imageGallery__item:hover,
+.imageGallery__item:focus {
+  transform: scale(1.03);
+}
+
+.imageGallery__image {
+  width: 100%;
+  height: 260px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  object-fit: cover;
+  display: block;
+}
+
+.imageGallery__image:hover {
+  cursor: zoom-in;
+}
